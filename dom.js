@@ -99,9 +99,16 @@ drinks.forEach((drink, index) => {
   drinksList.append(listItem);
 });
 
-const check = document.querySelectorAll(".drinkItem2");
+const drink2 = document.querySelector(".drinkItem2");
+const drink1 = document.querySelector(".drinkItem1");
+const drink3 = document.querySelector(".drinkItem3");
 
-console.log(check);
+const newDrink = document.createElement("li");
+newDrink.innerText = "1.Water - 1";
+
+console.dir(drink2);
+drink1.replaceWith(newDrink);
+drink3.remove();
 
 // list.prepend(newLi);
 // console.dir(list);
